@@ -3,7 +3,7 @@ Archive member included because of file (symbol)
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_n.a(del_op.o)
                               mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/retarget.o (operator delete(void*))
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-s_floor.o)
-                              .objs\pca9685\pca9685\adafruit_pwmservodriver.o (floor)
+                              .objs\pca9685\pca9685\pca9685lib.o (floor)
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_n.a(lib_a-errno.o)
                               mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/retarget.o (__errno)
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_n.a(lib_a-exit.o)
@@ -33,7 +33,7 @@ c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eab
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_n.a(lib_a-nano-mallocr.o)
                               c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_n.a(lib_a-findfp.o) (_malloc_r)
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_n.a(lib_a-printf.o)
-                              .objs\pca9685\pca9685\adafruit_pwmservodriver.o (printf)
+                              .objs\pca9685\pca9685\pca9685lib.o (printf)
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_n.a(lib_a-reent.o)
                               mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/retarget.o (errno)
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_n.a(lib_a-refill.o)
@@ -101,11 +101,11 @@ c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eab
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_n.a(lib_a-nano-msizer.o)
                               c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_n.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/softfp\libgcc.a(_arm_addsubdf3.o)
-                              .objs\pca9685\pca9685\adafruit_pwmservodriver.o (__aeabi_dsub)
+                              .objs\pca9685\pca9685\pca9685lib.o (__aeabi_dsub)
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/softfp\libgcc.a(_arm_cmpdf2.o)
                               c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-s_floor.o) (__aeabi_dcmpgt)
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/armv7e-m/softfp\libgcc.a(_arm_fixunsdfsi.o)
-                              .objs\pca9685\pca9685\adafruit_pwmservodriver.o (__aeabi_d2uiz)
+                              .objs\pca9685\pca9685\pca9685lib.o (__aeabi_d2uiz)
 c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(_exit.o)
                               c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-none-eabi/4.7.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_n.a(lib_a-exit.o) (_exit)
 mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
@@ -115,7 +115,7 @@ mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(FilePath.o)
 mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(FileSystemLike.o)
                               mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/retarget.o (mbed::FileSystemLike::opendir())
 mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(I2C.o)
-                              .objs\pca9685\pca9685\adafruit_pwmservodriver.o (mbed::I2C::frequency(int))
+                              .objs\pca9685\pca9685\pca9685lib.o (mbed::I2C::frequency(int))
 mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(assert.o)
                               mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o) (mbed_assert_internal)
 mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(error.o)
@@ -125,7 +125,7 @@ mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
 mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
                               mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/hal_tick.o (us_ticker_irq_handler)
 mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(wait_api.o)
-                              .objs\pca9685\pca9685\adafruit_pwmservodriver.o (wait_ms)
+                              .objs\pca9685\pca9685\pca9685lib.o (wait_ms)
 mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(PeripheralPins.o)
                               mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o) (PinMap_UART_RX)
 mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
@@ -173,7 +173,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x11 .objs\sevensegpwm\sevensegpwm.o
  .debug_macro   0x00000000      0x86e .objs\sevensegpwm\sevensegpwm.o
  .debug_line    0x00000000       0x3c .objs\sevensegpwm\sevensegpwm.o
- .debug_str     0x00000000     0x234b .objs\sevensegpwm\sevensegpwm.o
+ .debug_str     0x00000000     0x2344 .objs\sevensegpwm\sevensegpwm.o
  .comment       0x00000000       0x39 .objs\sevensegpwm\sevensegpwm.o
  .ARM.attributes
                 0x00000000       0x37 .objs\sevensegpwm\sevensegpwm.o
@@ -274,232 +274,234 @@ Discarded input sections
  .data          0x00000000        0x0 .objs\main.o
  .bss           0x00000000        0x0 .objs\main.o
  .debug_macro   0x00000000      0x86e .objs\main.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .group         0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text          0x00000000        0x0 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .data          0x00000000        0x0 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .bss           0x00000000        0x0 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text._ZN23Adafruit_PWMServoDriverC2EN4mbed3I2CEi
-                0x00000000       0x24 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text._ZN23Adafruit_PWMServoDriver9i2c_probeEv
-                0x00000000       0x5c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text._ZN23Adafruit_PWMServoDriver10setI2CfreqEi
-                0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text._ZN23Adafruit_PWMServoDriver6setPWMEhtt
-                0x00000000       0x3c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text._ZN23Adafruit_PWMServoDriver7setDutyEht
-                0x00000000       0x2c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text._ZN23Adafruit_PWMServoDriver5read8Ec
-                0x00000000       0x38 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text._ZN23Adafruit_PWMServoDriver6write8Ecc
-                0x00000000       0x24 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text._ZN23Adafruit_PWMServoDriver11setPrescaleEh
-                0x00000000       0x50 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text._ZN23Adafruit_PWMServoDriver10setPWMFreqEf
-                0x00000000       0x48 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text._ZN23Adafruit_PWMServoDriver5resetEv
-                0x00000000        0x8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .text._ZN23Adafruit_PWMServoDriver5beginEv
-                0x00000000        0x4 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .group         0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .text          0x00000000        0x0 .objs\pca9685\pca9685\pca9685lib.o
+ .data          0x00000000        0x0 .objs\pca9685\pca9685\pca9685lib.o
+ .bss           0x00000000        0x0 .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN10PCA9685LibC2EN4mbed3I2CEi
+                0x00000000       0x38 .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN10PCA9685Lib9i2c_probeEv
+                0x00000000       0x5c .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN10PCA9685Lib10setI2CfreqEi
+                0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN10PCA9685Lib6setPWMEhtt
+                0x00000000       0x3c .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN10PCA9685Lib7setDutyEht
+                0x00000000       0x2c .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN6LEDarraSEt
+                0x00000000        0xc .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN10PCA9685Lib5read8Ec
+                0x00000000       0x38 .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN10PCA9685Lib6write8Ecc
+                0x00000000       0x24 .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN10PCA9685Lib11setPrescaleEh
+                0x00000000       0x50 .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN10PCA9685Lib10setPWMFreqEf
+                0x00000000       0x48 .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN10PCA9685Lib5resetEv
+                0x00000000        0x8 .objs\pca9685\pca9685\pca9685lib.o
+ .text._ZN10PCA9685Lib5beginEv
+                0x00000000        0x4 .objs\pca9685\pca9685\pca9685lib.o
  .rodata.str1.4
-                0x00000000       0x5c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_info    0x00000000     0x2a90 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_abbrev  0x00000000      0x54a .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_loc     0x00000000      0x538 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
+                0x00000000       0x5c .objs\pca9685\pca9685\pca9685lib.o
+ .debug_info    0x00000000     0x2b80 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_abbrev  0x00000000      0x589 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_loc     0x00000000      0x59d .objs\pca9685\pca9685\pca9685lib.o
  .debug_aranges
-                0x00000000       0x70 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_ranges  0x00000000      0x108 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x753 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x86e .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x82 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x34 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x28 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x3b .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x44 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x209 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x2d .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x42 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0xd39 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000     0x4f96 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x43 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x256 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x57 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0xbb8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x26 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x13f .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0xf1 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x2cd .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x52 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x3ec .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x14c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x22 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x132 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x25d .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x1e6 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x22 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x1ae .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0xa4 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x16e .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x52 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x3d7 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x313 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x4b7 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x22b .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x1d1 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x84c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x4d .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x23a .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x1d8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x168 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x1d8 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x85 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x1df .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x108 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x12 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x74 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x11e .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x1c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x7c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0xe3 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x314 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x16c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x58 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x35 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0xa2 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x35 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x52 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x43 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x180 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x29 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0xac .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x1c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x22 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0xbd .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x16c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0xfa .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x2bb .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x1f .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x8e .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x1da .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x41 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x3a .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x18e .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000      0x126 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x7c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0xee .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_macro   0x00000000       0x52 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_line    0x00000000     0x116c .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_str     0x00000000    0x587d7 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .comment       0x00000000       0x39 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
+                0x00000000       0x78 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_ranges  0x00000000      0x110 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x753 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x86e .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x82 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x34 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x28 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x3b .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x44 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x209 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x2d .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x42 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0xd39 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000     0x4f96 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x43 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x256 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x57 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0xbb8 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x26 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x13f .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0xf1 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x2cd .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x52 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x3ec .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x14c .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x22 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x132 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x25d .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x1e6 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x22 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x1ae .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0xa4 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x16e .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x52 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x3d7 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x313 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x4b7 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x22b .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x1d1 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x84c .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x4d .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x23a .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x1d8 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x168 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x1d8 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x85 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x1df .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x108 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x12 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x74 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x11e .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x1c .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x7c .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0xe3 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x314 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x16c .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x58 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x35 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0xa2 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x35 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x52 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x43 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x180 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x29 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0xac .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x1c .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x22 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0xbd .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x16c .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0xfa .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x2bb .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x1f .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x8e .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x1da .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x16 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x41 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x3a .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x18e .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000      0x126 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x10 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x7c .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0xee .objs\pca9685\pca9685\pca9685lib.o
+ .debug_macro   0x00000000       0x52 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_line    0x00000000     0x117c .objs\pca9685\pca9685\pca9685lib.o
+ .debug_str     0x00000000    0x58774 .objs\pca9685\pca9685\pca9685lib.o
+ .comment       0x00000000       0x39 .objs\pca9685\pca9685\pca9685lib.o
  .ARM.attributes
-                0x00000000       0x37 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
- .debug_frame   0x00000000      0x118 .objs\pca9685\pca9685\adafruit_pwmservodriver.o
+                0x00000000       0x37 .objs\pca9685\pca9685\pca9685lib.o
+ .debug_frame   0x00000000      0x128 .objs\pca9685\pca9685\pca9685lib.o
  .text          0x00000000        0x0 mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o
  .data          0x00000000        0x0 mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o
  .bss           0x00000000        0x0 mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o
@@ -3534,7 +3536,7 @@ LOAD c:/program files (x86)/emblocks/2.30/share/em_armgcc/bin/../lib/gcc/arm-non
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
 LOAD .objs\sevensegpwm\sevensegpwm.o
 LOAD .objs\main.o
-LOAD .objs\pca9685\pca9685\adafruit_pwmservodriver.o
+LOAD .objs\pca9685\pca9685\pca9685lib.o
 LOAD mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o
 LOAD mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/startup_stm32f401xe.o
 LOAD mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/retarget.o
@@ -3790,12 +3792,12 @@ OUTPUT(.\build\SevenSegmentLib.elf elf32-littlearm)
  .debug_macro   0x0000c765       0xee .objs\main.o
  .debug_macro   0x0000c853       0x52 .objs\main.o
 
-.debug_line     0x00000000     0x1083
- .debug_line    0x00000000     0x1083 .objs\main.o
+.debug_line     0x00000000     0x1076
+ .debug_line    0x00000000     0x1076 .objs\main.o
 
-.debug_str      0x00000000    0x580bc
- .debug_str     0x00000000    0x580bc .objs\main.o
-                              0x583e9 (size before relaxing)
+.debug_str      0x00000000    0x580b5
+ .debug_str     0x00000000    0x580b5 .objs\main.o
+                              0x583e2 (size before relaxing)
 
 .debug_frame    0x00000000      0x1e0
  .debug_frame   0x00000000       0x20 .objs\main.o

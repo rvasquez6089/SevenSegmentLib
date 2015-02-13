@@ -1,5 +1,5 @@
-.objs\main.o: main.cpp PCA9685\PCA9685/Adafruit_PWMServoDriver.h \
- mbed/mbed.h mbed/platform.h \
+.objs\main.o: main.cpp PCA9685\PCA9685/PCA9685Lib.h mbed/mbed.h \
+ mbed/platform.h \
  mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE/device.h \
  mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE/objects.h \
  mbed\TARGET_NUCLEO_F401RE/cmsis.h mbed\TARGET_NUCLEO_F401RE/stm32f4xx.h \

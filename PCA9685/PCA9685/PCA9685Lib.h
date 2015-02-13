@@ -43,11 +43,17 @@
 #define ALLLED_ON_H 0xFB
 #define ALLLED_OFF_L 0xFC
 #define ALLLED_OFF_H 0xFD
+class PCA9685Lib; //Forward declaration
+struct LEDarr
+{
+    uint8_t LEDnum;
+    PCA9685Lib* PCALib;
+    void operator= (uint16_t duty);
+};
 
-
-class Adafruit_PWMServoDriver {
+class PCA9685Lib {
  public:
-  Adafruit_PWMServoDriver(I2C i2cobj, int addr = 0x80); //0b 1_000000_(R/W) <- default slave adress
+  PCA9685Lib(I2C i2cobj, int addr = 0x80); //0b 1_000000_(R/W) <- default slave adress
   void i2c_probe(void);
   void begin(void);
   void setI2Cfreq(int freq);
@@ -56,7 +62,8 @@ class Adafruit_PWMServoDriver {
   void setPrescale(uint8_t prescale);
   void setPWM(uint8_t num, uint16_t on, uint16_t off);
   void setDuty(uint8_t num, uint16_t duty);
-
+  void operator[](int i);
+  LEDarr LED[15];
  private:
   int _i2caddr;
   I2C i2c;
@@ -64,5 +71,6 @@ class Adafruit_PWMServoDriver {
   uint8_t read8(char addr);
   void write8(char addr, char d);
 };
+
 
 #endif
