@@ -43,3 +43,8 @@ Temporary Items
 .apdisk
 *.d
 *.o
+*.ebp
+*.depend
+*.ebTemp
+*.ebp
+*.ebp
