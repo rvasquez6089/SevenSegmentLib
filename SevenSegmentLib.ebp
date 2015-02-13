@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBlocks_project_file>
+	<EmBlocksVersion release="2.30" revision="1" />
+	<FileVersion major="1" minor="0" />
+	<Project>
+		<Option title="SevenSegmentLib" />
+		<Option pch_mode="2" />
+		<Option compiler="armgcc_eb" />
+		<Build>
+			<Target title="SevenSegmentLib">
+				<Option output=".\build\SevenSegmentLib.elf" />
+				<Option type="0" />
+				<Option compiler="armgcc_eb" />
+				<Device>
+					<Add option="$device=cortex-m4" />
+					<Add option="$fpu=fpv4-sp-d16" />
+					<Add option="$lscript=mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/STM32F401XE.ld" />
+				</Device>
+				<Compiler>
+					<Add option="-std=gnu99" />
+					<Add option="-Wall" />
+					<Add option="-Wextra" />
+					<Add option="-Wno-unused-parameter" />
+					<Add option="-Wno-missing-field-initializers" />
+					<Add option="-fmessage-length=0" />
+					<Add option="-fno-exceptions" />
+					<Add option="-fno-builtin" />
+					<Add option="-ffunction-sections" />
+					<Add option="-fdata-sections" />
+					<Add option="-fno-delete-null-pointer-checks" />
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-mfloat-abi=softfp" />
+					<Add option="-O2" />
+					<Add option="-DTARGET_NUCLEO_F401RE" />
+					<Add option="-DTARGET_M4" />
+					<Add option="-DTARGET_CORTEX_M" />
+					<Add option="-DTARGET_STM" />
+					<Add option="-DTARGET_STM32F4" />
+					<Add option="-DTARGET_STM32F401RE" />
+					<Add option="-DTOOLCHAIN_GCC_ARM" />
+					<Add option="-DTOOLCHAIN_GCC" />
+					<Add option="-D__CORTEX_M4" />
+					<Add option="-DARM_MATH_CM4" />
+					<Add option="-D__FPU_PRESENT=1" />
+					<Add option="-DMBED_BUILD_TIMESTAMP=1423854962.94" />
+					<Add option="-D__MBED__=1" />
+					<Add option="-DTARGET_FF_ARDUINO" />
+					<Add option="-DTARGET_FF_MORPHO" />
+					<Add option="-g3" />
+					<Add directory="." />
+					<Add directory="SevenSegPWM" />
+					<Add directory="mbed" />
+					<Add directory="mbed\TARGET_NUCLEO_F401RE" />
+					<Add directory="mbed\TARGET_NUCLEO_F401RE\TARGET_STM" />
+					<Add directory="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4" />
+					<Add directory="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE" />
+					<Add directory="mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM" />
+					<Add directory="PCA9685" />
+					<Add directory="PCA9685\PCA9685" />
+				</Compiler>
+				<Linker>
+					<Add option="-Wl,--gc-sections" />
+					<Add option="-Wl,--wrap,main" />
+					<Add option="-eb_lib=n" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/startup_stm32f401xe.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/retarget.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nor.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_usart.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_crc.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sd.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cortex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_irda.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_adc.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_can.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rng.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/board.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2s.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_iwdg.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_cryp_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/cmsis_nvic.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fsmc.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_wwdg.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sai.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_smartcard.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rcc.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/mbed_overrides.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_eth.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_sdmmc.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dma2d.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_spi.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_gpio.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_fmc.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_nand.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hash_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_ltdc.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_ll_usb.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_uart.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dcmi.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_dac_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sram.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pcd.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_flash_ramfunc.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pccard.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/hal_tick.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_tim_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_i2c.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_sdram.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc_ex.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_hcd.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_pwr.o" />
+					<Add option="mbed/TARGET_NUCLEO_F401RE/TOOLCHAIN_GCC_ARM/stm32f4xx_hal_rtc.o" />
+					<Add option="-lstdc++" />
+					<Add option="-eb_start_files" />
+					<Add library="supc++" />
+					<Add library="m" />
+					<Add library="c" />
+					<Add library="gcc" />
+					<Add library="nosys" />
+					<Add library="mbed" />
+					<Add directory="mbed\TARGET_NUCLEO_F401RE\TOOLCHAIN_GCC_ARM" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="SevenSegPWM\SevenSegPWM.h" />
+		<Unit filename="mbed\mbed_assert.h" />
+		<Unit filename="mbed\FunctionPointer.h" />
+		<Unit filename="mbed\mbed_debug.h" />
+		<Unit filename="mbed\Stream.h" />
+		<Unit filename="mbed\BusOut.h" />
+		<Unit filename="mbed\SPISlave.h" />
+		<Unit filename="mbed\Timeout.h" />
+		<Unit filename="mbed\AnalogIn.h" />
+		<Unit filename="mbed\InterruptManager.h" />
+		<Unit filename="mbed\FilePath.h" />
+		<Unit filename="mbed\sleep_api.h" />
+		<Unit filename="mbed\FileBase.h" />
+		<Unit filename="mbed\FileHandle.h" />
+		<Unit filename="mbed\us_ticker_api.h" />
+		<Unit filename="mbed\PortOut.h" />
+		<Unit filename="mbed\Serial.h" />
+		<Unit filename="mbed\SPI.h" />
+		<Unit filename="mbed\analogin_api.h" />
+		<Unit filename="mbed\gpio_api.h" />
+		<Unit filename="mbed\pwmout_api.h" />
+		<Unit filename="mbed\analogout_api.h" />
+		<Unit filename="mbed\CallChain.h" />
+		<Unit filename="mbed\platform.h" />
+		<Unit filename="mbed\rtc_time.h" />
+		<Unit filename="mbed\AnalogOut.h" />
+		<Unit filename="mbed\wait_api.h" />
+		<Unit filename="mbed\semihost_api.h" />
+		<Unit filename="mbed\port_api.h" />
+		<Unit filename="mbed\SerialBase.h" />
+		<Unit filename="mbed\mbed_interface.h" />
+		<Unit filename="mbed\gpio_irq_api.h" />
+		<Unit filename="mbed\serial_api.h" />
+		<Unit filename="mbed\Timer.h" />
+		<Unit filename="mbed\RawSerial.h" />
+		<Unit filename="mbed\mbed.h" />
+		<Unit filename="mbed\toolchain.h" />
+		<Unit filename="mbed\can_api.h" />
+		<Unit filename="mbed\I2CSlave.h" />
+		<Unit filename="mbed\ethernet_api.h" />
+		<Unit filename="mbed\Ethernet.h" />
+		<Unit filename="mbed\CAN.h" />
+		<Unit filename="mbed\TimerEvent.h" />
+		<Unit filename="mbed\PwmOut.h" />
+		<Unit filename="mbed\FileSystemLike.h" />
+		<Unit filename="mbed\FileLike.h" />
+		<Unit filename="mbed\can_helper.h" />
+		<Unit filename="mbed\mbed_error.h" />
+		<Unit filename="mbed\InterruptIn.h" />
+		<Unit filename="mbed\LocalFileSystem.h" />
+		<Unit filename="mbed\PortIn.h" />
+		<Unit filename="mbed\DirHandle.h" />
+		<Unit filename="mbed\rtc_api.h" />
+		<Unit filename="mbed\PortInOut.h" />
+		<Unit filename="mbed\BusInOut.h" />
+		<Unit filename="mbed\BusIn.h" />
+		<Unit filename="mbed\Ticker.h" />
+		<Unit filename="mbed\pinmap.h" />
+		<Unit filename="mbed\DigitalInOut.h" />
+		<Unit filename="mbed\DigitalOut.h" />
+		<Unit filename="mbed\I2C.h" />
+		<Unit filename="mbed\i2c_api.h" />
+		<Unit filename="mbed\DigitalIn.h" />
+		<Unit filename="mbed\spi_api.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_flash_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dma_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\hal_tick.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dma.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_iwdg.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rtc.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\system_stm32f4xx.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_tim.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_cryp.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pcd.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_gpio_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2c_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_gpio.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\core_caInstr.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_can.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\core_cm3.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sram.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_usb.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rcc_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2s.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_hash.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_uart.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rng.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_adc_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\core_cm4_simd.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\core_cmFunc.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_eth.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_nand.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dcmi.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_fsmc.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_cortex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\core_ca9.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rcc.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2c.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_sdmmc.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dac_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dac.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\cmsis.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pwr.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_flash.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_hash_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_dma2d.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\core_cmInstr.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_smartcard.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_def.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_i2s_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pwr_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\core_caFunc.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_nor.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_adc.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sdram.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_ll_fmc.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_spi.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\core_cm4.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_tim_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\cmsis_nvic.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sd.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_conf.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_wwdg.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_flash_ramfunc.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_ltdc.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_irda.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f401xe.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_crc.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_rtc_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_hcd.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\core_ca_mmu.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_sai.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_usart.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pccard.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_pcd_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\stm32f4xx_hal_cryp_ex.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\core_cm0.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\core_cm0plus.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\gpio_object.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\PeripheralPins.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\PeripheralNames.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\PortNames.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\PinNames.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\device.h" />
+		<Unit filename="mbed\TARGET_NUCLEO_F401RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F401RE\objects.h" />
+		<Unit filename="PCA9685\PCA9685\Adafruit_PWMServoDriver.h" />
+		<Unit filename="main.cpp">
+			<Option compilerVar="CC" />
+			<Option target="SevenSegmentLib">
+				<Option CompilerOptionsRelation="1" />
+				<Add option="-std=gnu++98" />
+				<Add option="-fno-rtti" />
+				<Add option="-Wall" />
+				<Add option="-Wextra" />
+				<Add option="-Wno-unused-parameter" />
+				<Add option="-Wno-missing-field-initializers" />
+				<Add option="-fmessage-length=0" />
+				<Add option="-fno-exceptions" />
+				<Add option="-fno-builtin" />
+				<Add option="-ffunction-sections" />
+				<Add option="-fdata-sections" />
+				<Add option="-fno-delete-null-pointer-checks" />
+				<Add option="-fomit-frame-pointer" />
+				<Add option="-mfloat-abi=softfp" />
+				<Add option="-O2" />
+				<Add option="-g3" />
+				<Add option="-DTARGET_NUCLEO_F401RE" />
+				<Add option="-DTARGET_M4" />
+				<Add option="-DTARGET_CORTEX_M" />
+				<Add option="-DTARGET_STM" />
+				<Add option="-DTARGET_STM32F4" />
+				<Add option="-DTARGET_STM32F401RE" />
+				<Add option="-DTOOLCHAIN_GCC_ARM" />
+				<Add option="-DTOOLCHAIN_GCC" />
+				<Add option="-D__CORTEX_M4" />
+				<Add option="-DARM_MATH_CM4" />
+				<Add option="-D__FPU_PRESENT=1" />
+				<Add option="-DMBED_BUILD_TIMESTAMP=1423854962.94" />
+				<Add option="-D__MBED__=1" />
+				<Add option="-DTARGET_FF_ARDUINO" />
+				<Add option="-DTARGET_FF_MORPHO" />
+			</Option>
+		</Unit>
+		<Unit filename="SevenSegPWM\SevenSegPWM.cpp">
+			<Option compilerVar="CC" />
+			<Option target="SevenSegmentLib">
+				<Option CompilerOptionsRelation="1" />
+				<Add option="-std=gnu++98" />
+				<Add option="-fno-rtti" />
+				<Add option="-Wall" />
+				<Add option="-Wextra" />
+				<Add option="-Wno-unused-parameter" />
+				<Add option="-Wno-missing-field-initializers" />
+				<Add option="-fmessage-length=0" />
+				<Add option="-fno-exceptions" />
+				<Add option="-fno-builtin" />
+				<Add option="-ffunction-sections" />
+				<Add option="-fdata-sections" />
+				<Add option="-fno-delete-null-pointer-checks" />
+				<Add option="-fomit-frame-pointer" />
+				<Add option="-mfloat-abi=softfp" />
+				<Add option="-O2" />
+				<Add option="-g3" />
+				<Add option="-DTARGET_NUCLEO_F401RE" />
+				<Add option="-DTARGET_M4" />
+				<Add option="-DTARGET_CORTEX_M" />
+				<Add option="-DTARGET_STM" />
+				<Add option="-DTARGET_STM32F4" />
+				<Add option="-DTARGET_STM32F401RE" />
+				<Add option="-DTOOLCHAIN_GCC_ARM" />
+				<Add option="-DTOOLCHAIN_GCC" />
+				<Add option="-D__CORTEX_M4" />
+				<Add option="-DARM_MATH_CM4" />
+				<Add option="-D__FPU_PRESENT=1" />
+				<Add option="-DMBED_BUILD_TIMESTAMP=1423854962.94" />
+				<Add option="-D__MBED__=1" />
+				<Add option="-DTARGET_FF_ARDUINO" />
+				<Add option="-DTARGET_FF_MORPHO" />
+			</Option>
+		</Unit>
+		<Unit filename="PCA9685\PCA9685\Adafruit_PWMServoDriver.cpp">
+			<Option compilerVar="CC" />
+			<Option target="SevenSegmentLib">
+				<Option CompilerOptionsRelation="1" />
+				<Add option="-std=gnu++98" />
+				<Add option="-fno-rtti" />
+				<Add option="-Wall" />
+				<Add option="-Wextra" />
+				<Add option="-Wno-unused-parameter" />
+				<Add option="-Wno-missing-field-initializers" />
+				<Add option="-fmessage-length=0" />
+				<Add option="-fno-exceptions" />
+				<Add option="-fno-builtin" />
+				<Add option="-ffunction-sections" />
+				<Add option="-fdata-sections" />
+				<Add option="-fno-delete-null-pointer-checks" />
+				<Add option="-fomit-frame-pointer" />
+				<Add option="-mfloat-abi=softfp" />
+				<Add option="-O2" />
+				<Add option="-g3" />
+				<Add option="-DTARGET_NUCLEO_F401RE" />
+				<Add option="-DTARGET_M4" />
+				<Add option="-DTARGET_CORTEX_M" />
+				<Add option="-DTARGET_STM" />
+				<Add option="-DTARGET_STM32F4" />
+				<Add option="-DTARGET_STM32F401RE" />
+				<Add option="-DTOOLCHAIN_GCC_ARM" />
+				<Add option="-DTOOLCHAIN_GCC" />
+				<Add option="-D__CORTEX_M4" />
+				<Add option="-DARM_MATH_CM4" />
+				<Add option="-D__FPU_PRESENT=1" />
+				<Add option="-DMBED_BUILD_TIMESTAMP=1423854962.94" />
+				<Add option="-D__MBED__=1" />
+				<Add option="-DTARGET_FF_ARDUINO" />
+				<Add option="-DTARGET_FF_MORPHO" />
+			</Option>
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger>
+				<target_debugging_settings target="SevenSegmentLib" active_interface="ST-link">
+					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBLOCKS}\share\contrib" executable="STLinkGDB.exe" description="" dont_start_server="false" backoff_time="1000" options="2" reg_filter="0" active_family="STMicroelectronics">
+						<family_options family_id="STMicroelectronics">
+							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
+							<option opt_id="ID_VECTOR_START" opt_value="0x08000000" />
+							<option opt_id="ID_RESET_TYPE" opt_value="System" />
+							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
+							<option opt_id="ID_SEMIHOST_CHECK" opt_value="0" />
+							<option opt_id="ID_RAM_EXEC" opt_value="0" />
+							<option opt_id="ID_VEC_TABLE" opt_value="1" />
+							<option opt_id="ID_DONT_CONN_RESET" opt_value="0" />
+							<option opt_id="ID_ALL_MODE_DEBUG" opt_value="0" />
+							<option opt_id="ID_DEV_ADDR" opt_value="" />
+							<option opt_id="ID_VERBOSE_LEVEL" opt_value="3" />
+						</family_options>
+					</debug_interface>
+				</target_debugging_settings>
+			</debugger>
+			<envvars />
+		</Extensions>
+	</Project>
+</EmBlocks_project_file>
